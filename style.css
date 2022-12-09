@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0; /* сбрасываем отступы для всех элементов которые идут по умолчанию */
+}
+.container {
+    max-width: 768px; /*максимальная ширина*/
+    padding: 0 10px;
+    margin: 0 auto;/* помещаем все элементы в контейнер , чтобы все элементы были расположены в одной заданной ширине */
+}
+.header{
+    display: flex; /*устанавливаем гибкое поведение элементов*/
+    justify-content: space-between; /*раскидываем элементы по краям*/
+    align-items:center; /*выравниваем по вертикале*/
+	background: #0b003a;
+    height:100px; /*высота блока*/
+}
+.header img{
+    height: 80%;  
+    padding: 10px; 
+}
+.logo{
+    height: 80%;
+    padding: 10px;
+}
+.main {
+    background-image: url(fon.png); /*задаём фон*/
+   background-repeat: no-repeat; /*задаём условия чтобы фон не повторялся*/
+   background-size: cover; /*чтобы картинка фона вписывалась в размеры контейнера*/
+   background-position: center;  /*фон располагался по центру*/
+}
+.main img {
+    display: block; 
+    width: 80%; /*Определяет ширину в процентах от содержащего блока родительского элемента.*/
+    padding-top: 80px; 
+    padding-bottom: 20px; 
+    margin-left: auto; 
+    margin-right: auto;   
+}
+.footer{
+    height: 200px;
+    display: flex; /*устанавливаем гибкое поведение элементов*/
+    justify-content: space-between; /*раскидываем элементы по краям*/
+    align-items:center; /*выравниваем по вертикале*/
+	background: #0b003a;/*задаём цвет фона*/
+    color: white;  /*задаём цвет шрифта*/
+}
+.footer img{
+    height: 90%;
+    padding: 10px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */ 
+    font-style: italic;
+    font-size: auto;
+    text-align: center;
+
+}
+h4{
+    padding-top: 10%; 
+    padding-right: 20px;
+    text-align: center;
+}
+a{
+    text-decoration: none; /*убирает подчеркивание в ссылке, которе есть на автомате*/
+    color:rgb(0, 156, 196);
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        display: flex;
+        flex-direction: column; /*направление элементов*/
+        height: 100%;
+    }
+
+ }
